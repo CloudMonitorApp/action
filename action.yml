@@ -1,0 +1,14 @@
+name: "DeployGuard"
+description: "Prevent unsafe Laravel deploys"
+
+inputs:
+  api_key:
+    required: true
+  api_url:
+    required: true
+  baseline:
+    default: production
+  environments:
+    default: staging,production
+  fail_on:
+    default: high
